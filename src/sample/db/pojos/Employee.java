@@ -32,7 +32,7 @@ import sample.db.xml.utils.SQLDateAdapter;
 @Table(name = "employees")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "Employee")
-@XmlType(propOrder = { "name", "dob", "address", "salary" })
+@XmlType(propOrder = { "dob", "address", "salary" })
 public class Employee implements Serializable {
 
 	private static final long serialVersionUID = -1156840724257282729L;

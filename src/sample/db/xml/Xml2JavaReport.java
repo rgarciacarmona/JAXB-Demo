@@ -55,8 +55,12 @@ public class Xml2JavaReport {
 		tx1.begin();
 
 		// Persist
-		// We assume the authors are already in the system
-		// If not, we must deal with them also
+		// We assume the authors are not already in the database
+		// In a real world, we should check if they already exist
+		// and update them instead of inserting as new
+		for (Employee employee : emps) {
+			em.persist(employee);
+		}
 		em.persist(report);
 		
 		// End transaction
