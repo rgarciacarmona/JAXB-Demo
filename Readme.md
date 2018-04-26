@@ -7,7 +7,7 @@ This is a simple JAXB demo project in Eclipse that uses:
 - SQLite-JDBC 3.8.7 (included)
 - Eclipselink 2.6 (included)
 
-It's designed to teach undergrads how to marshall and unmarshall XML with JAXB using SQLite as the database that contains the data, as well as using XSLT to turn an XML into a HTML web page. Therefore, it's not a well designed project nor a sample of how a real JAXB project should be structured. It's built on top of the [JPA-Demo project](https://github.com/rgarciacarmona/Japa-Demo), so everything that appeared in that project is still kept.
+It's designed to teach undergrads how to check if an XML file is valid against a DTD, marshall and unmarshall XML with JAXB using SQLite as the database that contains the data, and use XSLT to turn an XML into a HTML web page. Therefore, it's not a well designed project nor a sample of how a real JAXB project should be structured. It's built on top of the [JPA-Demo project](https://github.com/rgarciacarmona/JPA-Demo), so everything that appeared in that project is still kept.
 
 The project source code (*src* folder) is structured as follows:
 
