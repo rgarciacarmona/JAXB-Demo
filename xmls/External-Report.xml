@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+The type of the attribute "id" of Employee needs
+to be CDATA instead of ID, since DTD doesn't allow
+IDs that start with a number
+-->
+<!DOCTYPE Report [
+   <!ELEMENT Report (name, content, date, Authors)>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT content (#PCDATA)>
+   <!ELEMENT date (#PCDATA)>
+   <!ELEMENT Authors (Employee+)>
+   <!ELEMENT Employee (dob, address, salary)>
+   <!ATTLIST Employee name CDATA #REQUIRED
+                  	  id CDATA #REQUIRED>
+   <!ELEMENT dob (#PCDATA)>
+   <!ELEMENT address (#PCDATA)>
+   <!ELEMENT salary (#PCDATA)>
+]>
+
 <Report>
     <name>External Sales Report</name>
     <content>Eh, better than expected!</content>
