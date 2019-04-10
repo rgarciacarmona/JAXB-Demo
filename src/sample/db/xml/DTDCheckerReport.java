@@ -27,10 +27,7 @@ public class DTDCheckerReport {
             Document doc = builder.parse(xmlFile);
             if (customErrorHandler.isValid()) {
                 System.out.println(xmlFile + " was valid!");
-            } else {
-                System.out.println(xmlFile + " was not valid!");
             }
-
         } catch (ParserConfigurationException ex) {
             System.out.println(xmlFile + " error while parsing!");
         } catch (SAXException ex) {
